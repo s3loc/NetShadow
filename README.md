@@ -23,30 +23,30 @@ This software aims to secure users' internet activities and protect their privac
 
 #-----------------------------------------------------------------------------------------------------------------
 
-         ╔═══════════════════════════════════════╗
-         ║ 💻 **NETWORK DISCOVERY AND RECOGNITION** ║  
-         ╚═══════════════════════════════════════╝
+      
+         💻 **NETWORK DISCOVERY AND RECOGNITION** 
+     
 ──────────────────────────────────────────────
   [1] 📶 Scan WiFi Networks | [2] 🖥️ List Network Interfaces
   [3] 🛡️ Perform Port Scan | [4] 🌐 List Network IPs
   [5] 📍 Learn Location by IP Address | [6] 🌐 See Network Bandwidth
 
-        ╔═══════════════════════════════════════╗
-        ║ 🔒 **SECURITY** ║
-        ╚═══════════════════════════════════════╝
+       
+         🔒 **SECURITY** 
+       
 ──────────────────────────────────────────────
   [7] 🔍 Scan for Vulnerabilities | [8] 🌐 List VPN Connections
   [9] 📶 Scan Bluetooth Devices
 
-         ╔═══════════════════════════════════════╗
-         ║ 👀 **MONITORING AND ANALYSIS** ║
-         ╚═══════════════════════════════════════╝  
+  
+          👀 **MONITORING AND ANALYSIS** 
+        
 ──────────────────────────────────────────────
   [10] 👁️‍🗨️ Monitor Network Traffic | [11] 🔍 DNS Query
 
-       ╔═══════════════════════════════════════╗
-      ║ ⚙️ **OTHER** ║
-      ╚═══════════════════════════════════════╝
+     
+       ⚙️ **OTHER** ║
+     
 ──────────────────────────────────────────────
   [12] ⚠️ Launch DDoS Attack 
   [66]DDOS HACK | [13] 📧 Send Email Spam
