@@ -121,13 +121,15 @@ def display_menu():
          ╚═══════════════════════════════════════╝  
 ──────────────────────────────────────────────
   [10] 👁️‍🗨️ Ağ Trafiğini İzle        | [11] 🔍 DNS Sorgusu Yap
+  
 
        ╔═══════════════════════════════════════╗
       ║            ⚙️ **DİĞER**                 ║
       ╚═══════════════════════════════════════╝
 ──────────────────────────────────────────────
   [12] ⚠️ DDoS Saldırısı Başlat 
-  [66]DDOS HACK            | [13] 📧 Email Spam Gönder
+  [66]DDOS HACK|   [13] 📧 Email Spam Gönder
+  [17] WEB ZAYİFET TARAMASI 
   [14] 🔓 Şifre Kırıcı    | [15] 📊 Gruplandırıcı
 
 ========================================
@@ -252,10 +254,6 @@ def main():
                 print(f"Parola kırıldı: {cracked_password}")
             else:
                 print("Parola kırılamadı.")
-       
-       
-       
-       
         elif choice == '14':
             print("Bu seçenek aktif değil.")
         elif choice == '15':
@@ -263,15 +261,12 @@ def main():
         elif choice == '16':
             host = input("Ping atılacak IP adresini girin: ")
             ping(host)
+        elif choice == '17':
+            subprocess.run(['python', 'velettt.py'])
         elif choice == '100':
             nasil()
-               
         elif choice == '66':
-             subprocess.run(['python', r'C:\Users\vural\PycharmProjects\NetShadow\ddos.py'])
-
-
-            # veya subprocess.run(['python', r'C:\Users\vural\PycharmProjects\NetShadow\ddos.py'])
-
+            subprocess.Popen(['python', r'C:\Users\vural\PycharmProjects\NetShadow\ddos.py'])
         elif choice == '0':
             exit_ascii()
             exit()
