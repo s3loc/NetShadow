@@ -26,11 +26,17 @@ This software aims to secure users' internet activities and protect their privac
 ![Ekran görüntüsü 2024-07-12 020436](https://github.com/user-attachments/assets/00abd9c1-65ca-4a14-91fc-c348b344ae2c)
 
  pip install scapy
+ 
  pip install pywifi
+ 
  pip install geopy
+ 
  pip install Flask
+ 
  pip install mysql
+ 
  pip install netifaces
+ 
  pip install psutil
 #-----------------------------------------------------------------------------------------------------------------
 
