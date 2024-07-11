@@ -25,35 +25,13 @@ This software aims to secure users' internet activities and protect their privac
 
 ![Ekran görüntüsü 2024-07-12 020436](https://github.com/user-attachments/assets/00abd9c1-65ca-4a14-91fc-c348b344ae2c)
 
-      
- scapy: Open-source tool for network protocol analysis.
-
-pip install scapy
-
-pywifi: Library for controlling WiFi networks.
-
-pip install pywifi
-
-geopy: Library for geographical location data.
-
-pip install geopy
-
-Flask: Lightweight web framework for Python.
-
-pip install Flask
-
-mysql: Library for connecting Python with MySQL databases.
-
-pip install mysql
-
-netifaces: Library for querying network interfaces.
-
-pip install netifaces
-
-psutil: Library for system and process utilities.
-
-pip install psutil
-
+ pip install scapy
+ pip install pywifi
+ pip install geopy
+ pip install Flask
+ pip install mysql
+ pip install netifaces
+ pip install psutil
 #-----------------------------------------------------------------------------------------------------------------
 
 ## NetShadow Projesi
