@@ -39,6 +39,78 @@ This software aims to secure users' internet activities and protect their privac
  
  pip install psutil
 #-----------------------------------------------------------------------------------------------------------------
+Detailed Menu Explanation 📋
+Main Menu 🏠
+
+Upon launching the tool (python main.py), users encounter the main menu. This menu provides access to various functionalities categorized into different sections:
+
+    Network Scanning 📡
+    Security Tools 🔒
+    Monitoring & Analysis 📊
+    Other Utilities 🛠️
+    Exit 🚪
+
+Network Scanning (1) 📡
+
+    Scan WiFi Networks (1):
+        Initiates a scan to detect and list available WiFi networks.
+        Displays information such as SSID, signal strength, security status (e.g., WPA, WPA2), and channel.
+
+    List Network Interfaces (2):
+        Lists all network interfaces available on the system.
+        Provides details like interface name, IP address, and subnet mask.
+
+Security Tools (2) 🔒
+
+    Port Scan (3):
+        Conducts a port scan on a specified IP address or hostname.
+        Identifies open ports and their associated services.
+        Useful for network security assessments.
+
+    Ping Sweep (4):
+        Performs a ping sweep to discover live hosts within a specified IP range.
+        Determines which IP addresses are active and responsive on the network.
+
+    MAC Address Lookup (5):
+        Retrieves vendor information associated with a MAC address.
+        Provides details about the manufacturer or organization that owns the device.
+
+    DNS Lookup (6):
+        Performs DNS queries to resolve domain names to IP addresses.
+        Useful for checking domain configurations and resolving hostnames.
+
+    Vulnerability Scan (7):
+        Executes a vulnerability assessment using Nmap scripts.
+        Identifies potential vulnerabilities and security issues on target systems.
+
+Monitoring & Analysis (3) 📊
+
+    Monitor Network Traffic (10):
+        Captures and analyzes network traffic on specified interfaces (e.g., eth0, wlan0).
+        Displays packet details including source and destination IP addresses, protocols, and data sizes.
+
+    Bandwidth Usage (11):
+        Monitors bandwidth usage over time.
+        Provides insights into data consumption and network traffic patterns.
+
+Other Utilities (4) 🛠️
+
+    Email Spam (12):
+        Sends multiple emails to a specified recipient.
+        Requires providing sender details and email content.
+
+    DDoS Attack (13):
+        Launches a simulated DDoS attack on a specified IP address.
+        Use with caution in controlled environments or for authorized testing purposes only.
+
+Exit (5) 🚪
+
+    Exit (0):
+        Terminates the program and exits to the command prompt or terminal.
+#-----------------------------------------------------------------------------------------------------------------
+
+
+
 
 ## NetShadow Projesi
 
