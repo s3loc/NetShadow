@@ -3,6 +3,8 @@ from datetime import datetime
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from smtplib import SMTP, SMTPException
+import sys
+import time
 
 import mysql
 import netifaces, psutil
@@ -96,49 +98,39 @@ def display_menu():
              fE                 :    ,                                  E#t                      ;       ;@
               ,                                                         L:
 ──────────────────────────────────────────────
-========================================
-          ───── ❝ s3loc_ ❞ ─────
-──────────────────────────────────────────────
-=============================================
+╔══════════════════════════════════════════════╗
+║       💻 **NETWORK DISCOVERY & DIAGNOSIS**              
+╚══════════════════════════════════════════════╝
+────────────────────────────────────────────────
+[1] 📶 Scan WiFi Networks       | [2] 🖥️ List Network Interfaces
+[3] 🛡️ Port Scan                | [4] 🌐 List Network IPs
+[5] 📍 Get Location from IP     | [6] 🌐 Check Network Bandwidth
+╔══════════════════════════════════════════════╗
+║                  🔒 **SECURITY**                         
+╚══════════════════════════════════════════════╝
+────────────────────────────────────────────────
+[7] 🔍 Vulnerability Scan       | [8] 🌐 List VPN Connections
+[9] 📶 Scan Bluetooth Devices
+╔══════════════════════════════════════════════╗
+║           👀 MONITORING & ANALYSIS  
+╚══════════════════════════════════════════════╝
+────────────────────────────────────────────────
+[10] 👁️‍🗨️ Monitor Network Traffic | [11] 🔍 DNS Lookup
+╔══════════════════════════════════════════════╗
+║               ⚙️ **OTHER**                               
+╚══════════════════════════════════════════════╝
+────────────────────────────────────────────────
+[12] ⚠️ Start DDoS Attack        | [13] 📧 Send Email Spam
+[14] 🔓 Password Cracker         | [15] 📊 Data Analyzer
+[66] 🌐 DDOS HACK                | [17] 🔍 SQL Injection Vulnerability Scan
+==================================================================
+[0] 🚪 Exit                    | [100] ❓ How to Use?
+==================================================================
+     ▬▬▬▬▬▬▬▬▬๑۩۞۩๑▬▬▬▬▬▬▬▬▬▬▬
+                    s3loc
+       ▬▬▬▬▬▬▬▬▬๑۩۞۩๑▬▬▬▬▬▬▬▬▬
 
-         ╔═══════════════════════════════════════╗
-         ║       💻 **AĞ KEŞFİ VE TANILAMA**     ║  
-         ╚═══════════════════════════════════════╝
-──────────────────────────────────────────────
-  [1] 📶 WiFi Ağlarını Tara         | [2] 🖥️ Ağ Arayüzlerini Listele
-  [3] 🛡️ Port Taraması Yap           | [4] 🌐 Ağ IP'lerini Listele
-  [5] 📍 Konumu IP Adresinden Öğren  | [6] 🌐 Ağ Bant Genişliğini Gör
 
-        ╔═══════════════════════════════════════╗
-        ║        🔒 **GÜVENLİK**                ║
-        ╚═══════════════════════════════════════╝
-──────────────────────────────────────────────
-  [7] 🔍 Zafiyet Taraması Yap       | [8] 🌐 VPN Bağlantılarını Listele
-  [9] 📶 Bluetooth Cihazlarını Tara
-
-         ╔═══════════════════════════════════════╗
-         ║       👀 **İZLEME VE ANALİZ**         ║
-         ╚═══════════════════════════════════════╝  
-──────────────────────────────────────────────
-  [10] 👁️‍🗨️ Ağ Trafiğini İzle        | [11] 🔍 DNS Sorgusu Yap
-  
-
-       ╔═══════════════════════════════════════╗
-      ║            ⚙️ **DİĞER**                 ║
-      ╚═══════════════════════════════════════╝
-──────────────────────────────────────────────
-  [12] ⚠️ DDoS Saldırısı Başlat 
-  [66]DDOS HACK|   [13] 📧 Email Spam Gönder
-  [17] WEB ZAYİFET TARAMASI 
-  [14] 🔓 Şifre Kırıcı    | [15] 📊 Gruplandırıcı
-
-========================================
-  [0] 🚪 Çıkış
-  [100] ❓ Nasıl Kullanılır? - Programın nasıl kullanılacağı hakkında bilgi almak için bu seçeneği kullanabilirsiniz.
-========================================
-──────────────────────────────────────────────
-
-──────────────────────────────────────────────
           
 
     """)
@@ -146,46 +138,36 @@ def display_menu():
 
 def nasil():
     learn = r"""
-        Tabii ki, daha fazla süsleme yapalım! İşte renkli ve eğlenceli bir açıklama:
+    How to use it? 🌟🔧
 
-Nasıl Kullanılır? 🌟🔧
+This program is designed to perform various network and system management tasks such as network discovery and diagnostics, security, monitoring and analysis. Below are the basic steps of using the program:
 
-Bu program, ağ keşfi ve tanılama, güvenlik, izleme ve analiz gibi çeşitli ağ ve sistem yönetimi görevlerini gerçekleştirmek için tasarlanmıştır. Aşağıda, programın temel kullanım adımları bulunmaktadır:
+    Scan WiFi Networks 🔍✨✨: To scan available WiFi networks. Take a look at the wireless world!
+    List Network Interfaces 📡🔢: Lists all network interfaces on the system. Lists available ports for you!
+    Perform Port Scan 🚪🔍: Performs a port scan on a specified target. Knock on doors and find hidden entrances!
+    List Network IPs 🌐🔢🔢: Lists all network IP addresses on the system. Navigate the network world and see who is there!
+    Get Location from IP Address 📍🗺️: Finds the geographical location of a specific IP address. Solve the mystery of IP addresses and discover locations around the world!
+    Scan for Vulnerabilities 🛡️🔍: Runs a vulnerability scan on a specified target. Check your firewalls and close vulnerabilities!
+    List VPN Connections 🔒📋: Lists active VPN connections on the system. Protect your privacy and check your VPN connections!
+    Scan Bluetooth Devices 📶🔍: To scan for nearby Bluetooth devices. Dive into the world of Bluetooth and discover nearby devices!
 
-    WiFi Ağlarını Tara 🔍✨: Mevcut WiFi ağlarını taramak için. Kablosuz dünyaya bir göz atın!
-    Ağ Arayüzlerini Listele 📡🔢: Sistemdeki tüm ağ arayüzlerini listeler. Sizin için mevcut bağlantı noktalarını listeler!
-    Port Taraması Yap 🚪🔍: Belirtilen bir hedef üzerinde port taraması yapar. Kapıları çalın ve gizli girişler bulun!
-    Ağ IP'lerini Listele 🌐🔢: Sistemdeki tüm ağ IP adreslerini listeler. Ağ dünyasında dolaşın ve kimlerin orada olduğunu görün!
-    Konumu IP Adresinden Öğren 📍🗺️: Belirli bir IP adresinin coğrafi konumunu bulur. IP adreslerinin sırrını çözün ve dünyanın dört bir yanındaki yerleri keşfedin!
-    Zafiyet Taraması Yap 🛡️🔍: Belirtilen bir hedef üzerinde zafiyet taraması yapar. Güvenlik duvarlarınızı kontrol edin ve açıkları kapatın!
-    VPN Bağlantılarını Listele 🔒📋: Sistemdeki aktif VPN bağlantılarını listeler. Gizliliğinizi koruyun ve VPN bağlantılarınızı kontrol edin!
-    Bluetooth Cihazlarını Tara 📶🔍: Yakındaki Bluetooth cihazlarını taramak için. Bluetooth dünyasına dalın ve yakındaki cihazları keşfedin!
-    Ağ Trafiğini İzle 🚦👀: Ağ trafiğini dinlemek ve analiz etmek için. Ağ trafiğinin kalbine gidin ve bilgileri toplayın!
-    DNS Sorgusu Yap 🔍📚: Belirtilen bir alan adı için DNS sorgusu yapar. İnternetin adres defterine göz atın ve hedefleri bulun!
-    DDoS Saldırısı Başlat ⚔️🌐: Belirtilen bir hedefe DDoS saldırısı başlatır. Saldırıya hazır olun ve rakiplerinize karşı savaş açın!
-    Email Spam Gönder 📧🔥: Belirtilen e-posta adresine istenmeyen e-postalar göndermek için. Spamı gönderin ve kafaları karıştırın!
-    Şifre Kırıcı 🔓🔍: Belirli bir hash değeri için şifre kırma işlemi yapar. Şifreleri kırmak için gizli kodları çözün!
-    Gruplandırıcı 📊🔍: Numuneleri belirli bir elemente göre gruplayarak bir çıktı dosyası oluşturur. Verileri sınıflandırın ve düzenleyin!
-    Ağ Trafiğini İzle 📈👁️: Belirtilen bir ağ arayüzünden gelen ve giden trafik verilerini izler. Ağ trafiğini izleyin ve veri akışını kontrol altında tutun!
 
-Her seçeneği kullanmadan önce lütfen dikkatlice düşünün ve istenmeyen sonuçlara neden olabilecek işlemleri gerçekleştirmekten kaçının.     """
+Make DNS Query 🔍📚: Performs a DNS query for a specified domain name. Browse the internet's address book and find targets!
+    Launch DDoS Attack ⚔️🌐: Launches a DDoS attack on a specified target. Get ready for the attack and wage war against your opponents!
+    Send Email Spam 📧🔥🔥: To send spam emails to the specified email address. Send spam and confuse heads!
+    Password Cracker 🔓🔍: Cracks passwords for a given hash value. Decode secret codes to crack passwords!
+    Grouper 📊🔍: Creates an output file by grouping samples by a specific element. Classify and organize data!
+    Monitor Network Traffic 📈👁️: Monitors incoming and outgoing traffic data from a specified network interface. Monitor network traffic and keep data flow under control!
+
+Please think carefully before using each option and avoid performing actions that may have unintended consequences. 
+
+Translated with DeepL.com (free version)
+     
+
+    """
     print(learn)
 #================================================================================================================================================================
-def loading_animation():
-    chars = "/—\\|"
-    for _ in range(10):
-        for char in chars:
-            sys.stdout.write(f"\rLoading {char}")
-            sys.stdout.flush()
-            time.sleep(0.1)
-    print("\n\n")
 
-print("Lütfen Dikkatli Olunuz")
-
-
-
-
-logging.basicConfig(filename='uygulama.log', level=logging.INFO)
 #================================================================================================================================================================
 
 def welcome_ascii():
@@ -204,78 +186,8 @@ def welcome_ascii():
 #----- MENÜ KISMI-------------
 
 
-def main():
-    welcome_ascii()
-    loading_animation()
-    while True:
-        display_menu()
-        choice = input("Bir seçenek belirleyin: ")
 
-        if choice == '1':
-            check_wifi_security()
-        elif choice == '2':
-            list_network_interfaces()
-        elif choice == '3':
-            target = input("Hedef IP adresi: ")
-            start_port = int(input("Başlangıç portu: "))
-            end_port = int(input("Bitiş portu: "))
-            scan_ports(target, start_port, end_port)
-        elif choice == '4':
-            list_network_ips()
-        elif choice == '5':
-            ip_address = input("IP adresi: ")
-            location = get_location_from_ip(ip_address)
-            display_location(location)
-        elif choice == '6':
-            target = input("Hedef IP adresi: ")
-            scan_vulnerabilities(target)
-        elif choice == '7':
-            list_vpn_connections()
-        elif choice == '8':
-            scan_bluetooth_devices()
-        elif choice == '9':
-            monitor_network()
-        elif choice == '10':
-            domain = input("Alan adı: ")
-            dns_lookup(domain)
-        elif choice == '11':
-            ddos()
-        elif choice == '12':
-            email_spam()
-        elif choice == '13':
-            target_hash = input("Hedef hash'i girin: ")
-            password_length = int(input("Parola uzunluğunu girin: "))
-            character_set = input("Kullanılacak karakter setini girin (varsayılan: ascii_letters+digits): ")
-            if not character_set:
-                character_set = string.ascii_letters + string.digits
 
-            cracked_password = crack_password(password_length, character_set, target_hash)
-            if cracked_password:
-                print(f"Parola kırıldı: {cracked_password}")
-            else:
-                print("Parola kırılamadı.")
-        elif choice == '14':
-            print("Bu seçenek aktif değil.")
-        elif choice == '15':
-            sniff_incoming_traffic()
-        elif choice == '16':
-            host = input("Ping atılacak IP adresini girin: ")
-            ping(host)
-        elif choice == '17':
-            subprocess.run(['python', 'velettt.py'])
-        elif choice == '100':
-            nasil()
-        elif choice == '66':
-            subprocess.Popen(['python', r'C:\Users\vural\PycharmProjects\NetShadow\ddos.py'])
-        elif choice == '0':
-            exit_ascii()
-            exit()
-
-        else:
-            print("Geçersiz seçenek. Lütfen tekrar deneyin.")
-
-if __name__ == "__main__":
-    main()
 
 #================================================================================================================================================================
 
@@ -413,10 +325,10 @@ def sniff_incoming_traffic():
 
 
 def ping(host):
-    # İşletim sistemi türüne göre ping komutu belirleme
+
     param = '-n' if platform.system().lower() == 'windows' else '-c'
 
-    # Ping komutunu çalıştırma
+   
     command = ['ping', param, '1', host]
     return subprocess.call(command) == 0
 
@@ -451,6 +363,7 @@ def list_network_interfaces():
                     netmask = address_info.get('netmask')
                     print(f"IPv4 Adresi: {ip_address}")
                     print(f"Alt Ağ Maskesi: {netmask}")
+
 
 def scan_ports(target, start_port, end_port):
     print(f"Port taraması başlatılıyor: {target}")
@@ -610,6 +523,132 @@ def continue_option():
     """
     return input("\nDevam Etme Seçeneği Sunmak: Başka bir işlem yapmak ister misiniz? (E/H)\n").upper() == 'E'
 #---------------------------------------------------------
+def loading_animation2():
+    animation = "|/-\\"
+    for i in range(20):
+        time.sleep(0.1)
+        sys.stdout.write("\r" + "Loading " + animation[i % len(animation)])
+        sys.stdout.flush()
+def main():
+    welcome_ascii()
+    while True:
+        display_menu()
+        choice = input("Please select an option: ")
+
+        if choice == '1':
+            loading_animation()
+            print("\nChecking Wi-Fi security...")
+            check_wifi_security()
+            print("Operation completed.")
+        elif choice == '2':
+            loading_animation()
+            print("\nListing network interfaces...")
+            list_network_interfaces()
+            print("Operation completed.")
+        elif choice == '3':
+            loading_animation()
+            target = input("\nTarget IP address: ")
+            start_port = int(input("Start port: "))
+            end_port = int(input("End port: "))
+            print(f"Scanning ports on {target}...")
+            scan_ports(target, start_port, end_port)
+            print("Operation completed.")
+        elif choice == '4':
+            loading_animation()
+            print("\nListing network IP addresses...")
+            list_network_ips()
+            print("Operation completed.")
+        elif choice == '5':
+            loading_animation()
+            ip_address = input("\nIP address: ")
+            print(f"Fetching location for {ip_address}...")
+            location = get_location_from_ip(ip_address)
+            display_location(location)
+            print("Operation completed.")
+        elif choice == '6':
+            loading_animation()
+            target = input("\nTarget IP address: ")
+            print(f"Scanning vulnerabilities on {target}...")
+            scan_vulnerabilities(target)
+            print("Operation completed.")
+        elif choice == '7':
+            loading_animation()
+            print("\nListing VPN connections...")
+            list_vpn_connections()
+            print("Operation completed.")
+        elif choice == '8':
+            loading_animation()
+            print("\nScanning Bluetooth devices...")
+            scan_bluetooth_devices()
+            print("Operation completed.")
+        elif choice == '9':
+            loading_animation()
+            print("\nMonitoring network...")
+            monitor_network()
+            print("Operation completed.")
+        elif choice == '10':
+            loading_animation()
+            domain = input("\nDomain name: ")
+            print(f"Performing DNS lookup for {domain}...")
+            dns_lookup(domain)
+            print("Operation completed.")
+        elif choice == '11':
+            loading_animation()
+            print("\nStarting DDoS attack...")
+            ddos()
+            print("Operation completed.")
+        elif choice == '12':
+            loading_animation()
+            print("\nSending email spam...")
+            email_spam()
+            print("Operation completed.")
+        elif choice == '13':
+            loading_animation()
+            target_hash = input("\nTarget hash: ")
+            password_length = int(input("Password length: "))
+            character_set = input("Character set to use (default: ascii_letters+digits): ")
+            if not character_set:
+                character_set = string.ascii_letters + string.digits
+
+            print("Cracking password...")
+            cracked_password = crack_password(password_length, character_set, target_hash)
+            if cracked_password:
+                print(f"Password cracked: {cracked_password}")
+            else:
+                print("Password couldn't be cracked.")
+            print("Operation completed.")
+        elif choice == '14':
+            print("This option is not active.")
+        elif choice == '15':
+            loading_animation()
+            print("\nSniffing incoming traffic...")
+            sniff_incoming_traffic()
+            print("Operation completed.")
+        elif choice == '16':
+            loading_animation()
+            host = input("\nEnter IP address to ping: ")
+            print(f"Pinging {host}...")
+            ping(host)
+            print("Operation completed.")
+        elif choice == '17':
+            loading_animation()
+            print("\nRunning Velettt...")
+            subprocess.run(['python', 'velettt.py'])
+            print("Operation completed.")
+        elif choice == '100':
+            how()
+        elif choice == '66':
+            loading_animation()
+            print("\nStarting DDoS attack...")
+            subprocess.Popen(['python', r'DDOS.PY ']) #Write the extension of the ddos ​​file
+            print("Operation completed.")
+        elif choice == '0':
+            exit_ascii()
+            exit()
+        else:
+            print("Invalid option. Please try again.")
+
+        input("\nPress Enter to continue...")
 
 if __name__ == "__main__":
     main()
