@@ -131,7 +131,12 @@ NetShadow, kullanıcıların internet aktivitelerini güvenli ve anonim hale get
 - **Kapsamlı Kullanıcı Rehberi:** Detaylı kullanıcı rehberi ve destek belgeleri eksiktir.
 - **Veri Yedekleme:** Kullanıcı verilerinin otomatik yedeklenmesi işlevi henüz tamamlanmamıştır.
 
-### Sorumluluk Reddi
-Bu yazılım, kullanıcıların internet aktivitelerini güvenli hale getirmeyi ve gizliliğini korumayı amaçlamaktadır. Ancak, yazılımın kullanımı sırasında meydana gelebilecek herhangi bir veri kaybı, güvenlik ihlali veya diğer zararlardan sorumlu değilim. Yazılım "olduğu gibi" sağlanmaktadır ve herhangi bir garanti vermemekteyiz. Kullanıcılar, yazılımı kullanmadan önce kendi risklerini değerlendirmelidir.
+### Sorumluluk Reddi:
+
+Bu proje ve içindeki yazılımlar, yalnızca eğitim, araştırma ve etik güvenlik testi amacıyla geliştirilmiştir. Kullanıcılar, bu yazılımları kullanmadan önce yasal yükümlülüklerini, etik kuralları ve ilgili mevzuatları dikkate almakla yükümlüdür.
+
+Bu araçların kötüye kullanımı, yasadışı faaliyetler veya izinsiz sistemlere erişim gibi eylemler, kullanıcının kendi sorumluluğundadır. Proje geliştiricileri, bu yazılımların kullanımı sonucunda doğabilecek herhangi bir zarar, kayıp veya hukuki sonuçtan sorumlu tutulamaz.
+
+Bu yazılımlar, yalnızca yasal ve etik sınırlar içinde kullanılmalıdır. Kullanıcı, bu sorumluluk reddini kabul ederek yazılımları kullanmayı kabul etmektedir.
 
 
