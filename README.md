@@ -131,12 +131,12 @@ NetShadow, kullanıcıların internet aktivitelerini güvenli ve anonim hale get
 - **Kapsamlı Kullanıcı Rehberi:** Detaylı kullanıcı rehberi ve destek belgeleri eksiktir.
 - **Veri Yedekleme:** Kullanıcı verilerinin otomatik yedeklenmesi işlevi henüz tamamlanmamıştır.
 
-### Sorumluluk Reddi:
+Bu proje ve içindeki yazılımlar, yalnızca eğitim, araştırma ve etik güvenlik testleri amacıyla geliştirilmiştir. Kullanıcılar, bu yazılımları kullanmadan önce yasal yükümlülüklerini, etik standartları ve geçerli mevzuatları dikkate almakla yükümlüdür.
 
-Bu proje ve içindeki yazılımlar, yalnızca eğitim, araştırma ve etik güvenlik testi amacıyla geliştirilmiştir. Kullanıcılar, bu yazılımları kullanmadan önce yasal yükümlülüklerini, etik kuralları ve ilgili mevzuatları dikkate almakla yükümlüdür.
+Bu araçların herhangi bir şekilde kötüye kullanımı, yasadışı faaliyetler veya izinsiz erişim gibi eylemler, kullanıcının kendi sorumluluğundadır. Proje geliştiricileri, bu yazılımların kullanımı sonucunda doğabilecek herhangi bir zarar, kayıp veya hukuki sonuçtan kesinlikle sorumlu tutulamaz.
 
-Bu araçların kötüye kullanımı, yasadışı faaliyetler veya izinsiz sistemlere erişim gibi eylemler, kullanıcının kendi sorumluluğundadır. Proje geliştiricileri, bu yazılımların kullanımı sonucunda doğabilecek herhangi bir zarar, kayıp veya hukuki sonuçtan sorumlu tutulamaz.
+Bu yazılımlar, yalnızca yasal ve etik sınırlar içinde ve yalnızca izinli sistemler üzerinde kullanılmalıdır. Kullanıcı, bu sorumluluk reddini kabul ederek yazılımları kullanmayı kabul etmektedir. Kullanım sırasında doğabilecek tüm sonuçlardan yalnızca kullanıcı sorumlu olacaktır.
 
-Bu yazılımlar, yalnızca yasal ve etik sınırlar içinde kullanılmalıdır. Kullanıcı, bu sorumluluk reddini kabul ederek yazılımları kullanmayı kabul etmektedir.
+Herhangi bir yasa ihlali durumunda, sorumluluk tamamen kullanıcıya aittir ve proje geliştiricileri hiçbir şekilde yasal yükümlülük üstlenmemektedir.
 
 
