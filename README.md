@@ -137,6 +137,9 @@ Bu araçların herhangi bir şekilde kötüye kullanımı, yasadışı faaliyetl
 
 Bu yazılımlar, yalnızca yasal ve etik sınırlar içinde ve yalnızca izinli sistemler üzerinde kullanılmalıdır. Kullanıcı, bu sorumluluk reddini kabul ederek yazılımları kullanmayı kabul etmektedir. Kullanım sırasında doğabilecek tüm sonuçlardan yalnızca kullanıcı sorumlu olacaktır.
 
+![SLEEP](https://github.com/user-attachments/assets/c55f3a45-4d39-4edc-99d7-866829fd2f91)
+
+
 Herhangi bir yasa ihlali durumunda, sorumluluk tamamen kullanıcıya aittir ve proje geliştiricileri hiçbir şekilde yasal yükümlülük üstlenmemektedir.
 
 
