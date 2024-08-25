@@ -135,11 +135,8 @@ Bu proje ve içindeki yazılımlar, yalnızca eğitim, araştırma ve etik güve
 
 Bu araçların herhangi bir şekilde kötüye kullanımı, yasadışı faaliyetler veya izinsiz erişim gibi eylemler, kullanıcının kendi sorumluluğundadır. Proje geliştiricileri, bu yazılımların kullanımı sonucunda doğabilecek herhangi bir zarar, kayıp veya hukuki sonuçtan kesinlikle sorumlu tutulamaz.
 
-Bu yazılımlar, yalnızca yasal ve etik sınırlar içinde ve yalnızca izinli sistemler üzerinde kullanılmalıdır. Kullanıcı, bu sorumluluk reddini kabul ederek yazılımları kullanmayı kabul etmektedir. Kullanım sırasında doğabilecek tüm sonuçlardan yalnızca kullanıcı sorumlu olacaktır.
-
-![SLEEP](https://github.com/user-attachments/assets/c55f3a45-4d39-4edc-99d7-866829fd2f91)
-
+Bu yazılımlar, yalnızca yasal ve etik sınırlar içinde ve yalnızca izinli sistemler üzerinde kullanılmalıdır. Kullanıcı, bu sorumluluk reddini kabul ederek yazılımları kullanmayı kabul etmektedir. Kullanım sırasında doğabilecek tüm sonuçlardan yalnızca kullanıcı sorumlu olacaktır
 
 Herhangi bir yasa ihlali durumunda, sorumluluk tamamen kullanıcıya aittir ve proje geliştiricileri hiçbir şekilde yasal yükümlülük üstlenmemektedir.
-
+![SLEEP](https://github.com/user-attachments/assets/c55f3a45-4d39-4edc-99d7-866829fd2f91)
 
