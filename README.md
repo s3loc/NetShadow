@@ -1,7 +1,3 @@
-Metninizde bazı düzeltmeler yaptım. İşte önerilen hali:
-
----------------------------------------------------------
-
 ## NetShadow Project
 
 ### Project Description
